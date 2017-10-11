@@ -37,7 +37,7 @@ plt.axis([0.75, 6.25, 0, 13])
 plt.grid()
 plt.xlabel('X')
 plt.ylabel('Y')
-
+plt.title("Interpolations")
 """P3.(b) discuss the diff btw the resulting interpolations
 
 In mathematical analysis, smoothness outlines how many function 

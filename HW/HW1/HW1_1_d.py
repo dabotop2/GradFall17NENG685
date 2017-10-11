@@ -35,6 +35,7 @@ plt.axis([-0.5, 4.5, -5, 5])
 plt.xlabel('X')
 plt.ylabel('Y')
 plt.legend(("L0", "L1", "L2","L3"), loc="lower center")
+plt.title("Lagrange Polynomials for x0-x4")
 #now combine the polynomials
 P3=f(x_pts[0])*L0+f(x_pts[1])*L1+f(x_pts[2])*L2+f(x_pts[3])*L3
 # This is just the function evaluation
@@ -49,6 +50,7 @@ plt.grid()
 plt.plot(x, P3, 'b')
 plt.plot(x, F, 'g')
 plt.plot(x_pts, f_vals, '*')
+plt.title("Function vs Interpolation")
 plt.legend(("Interpolation", "Function", "points"), loc="lower right")
 
 """#1(d)Discuss the differences in how well the function is interpolated using
