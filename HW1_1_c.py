@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
+Kevin Choe  HW#1    Due:13 Oct 2017
 """
-# 1st Lt Kevin Choe  HW#1    Due:11 Oct 2017
-#1(c)
+'''Problem 1(c)'''
 import numpy as np
 import math as m
 
@@ -43,7 +40,7 @@ P3=f(x_pts[0])*L0+f(x_pts[1])*L1+f(x_pts[2])*L2+f(x_pts[3])*L3
 # This is just the function evaluation
 F=f(x)
 f_vals = f(x_pts)
-#let's plot the P3,F,Pts for comparison to the first plot!
+#let's plot the P3,F,Pts!
 plt.show()
 plt.grid()
 plt.axis([-0.5, 4.5, -5, 5])

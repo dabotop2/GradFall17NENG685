@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
-"""
-""" 1st Lt Kevin Choe  HW#1    Due:11 Oct 2017
-#1(d): changed x_pts array from (c)"""
+Kevin Choe  HW#1    Due:13 Oct 2017
+""" 
+'''1(d): changed x_pts array from (c)'''
 import numpy as np
 import math as m
 
@@ -43,7 +40,7 @@ P3=f(x_pts[0])*L0+f(x_pts[1])*L1+f(x_pts[2])*L2+f(x_pts[3])*L3
 # This is just the function evaluation
 F=f(x)
 f_vals = f(x_pts)
-#let's plot the P3,F,Pts for comparison to the first plot!
+#let's plot the P3,F,Pts!
 plt.show()
 plt.axis([-0.5, 4.5, -5, 5])
 plt.xlabel('X')
@@ -56,6 +53,7 @@ plt.legend(("Interpolation", "Function", "points"), loc="lower right")
 
 """#1(d)Discuss the differences in how well the function is interpolated using
 the different point sets:
+    
 As the point interval (between the 2nd and 3rd x-points) becomes smaller 
 (narrower from plot (d) to plot (c)), the interpolation plot represents more 
 similarity in shapes to the actual function plot. More data points cause 
