@@ -73,8 +73,8 @@ for k, col in zip(unique_labels, colors):
              markeredgecolor='k', markersize=4)
     plt.errorbar(Outliers[:, 0], Outliers[:, 1], .3, .3, fmt='k*')
     
-plt.xlim([-3,-2])
-plt.ylim([-2.5, 0])
+plt.xlim([-2.5,-2])
+plt.ylim([-1,0])
 plt.title('Estimated number of clusters: %d (eps=.3; min=5)' % n_clusters_)
 plt.savefig('eps=0.3; min_sample=5_zoomed_in.v1.jpg')
 plt.show()
@@ -101,8 +101,8 @@ for k, col in zip(unique_labels, colors):
              markeredgecolor='k', markersize=4)
     plt.errorbar(Outliers[:, 0], Outliers[:, 1], .3, .3, fmt='k*')
     
-plt.xlim([-2.7,-2])
-plt.ylim([-2,-1])
+plt.xlim([-4,-1])
+plt.ylim([-4.2,0])
 plt.title('Estimated number of clusters: %d (eps=.3; min=5)' % n_clusters_)
 plt.savefig('eps=0.3; min_sample=5_zoomed_in.v2.jpg')
 plt.show()

@@ -80,14 +80,14 @@ Data_summary=np.column_stack((X,core_samples_mask,Boundary_base,Outlier_base,lab
 
 #create Dataframe for Data_summary for better output data display
 Data_Summary = pd.DataFrame(Data_summary)
-Data_Summary.columns=["X data", "Y data", "Core", "Boundary", "Outlier", "Cluster#"]
+Data_Summary.columns=["X data", "Y data", "Core", "Border", "Noise", "Cluster#"]
 Data_Summary.to_csv('Data Summary.csv', sep=',')
 
 '''
 Final Result! 
 Data summary captured in the "Data_summary" table in the Variable explorer.
 
-Suppose we want to add a set of random data set(s) into a preexisting data set 
+Suppose we want to add a set of random data into a preexisting data set 
 and compare their relation. We can simply add a new data set to preexisting data
 set in "DBSCAN-data.py". Then, we operate the run file "DBSCAN_analyzed_data_table"
 which is already built to import data from "DBSCAN-data.py" file. This run file 

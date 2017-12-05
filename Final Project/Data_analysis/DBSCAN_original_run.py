@@ -15,7 +15,7 @@ centers = [[1, 1], [-1, -1], [1, -1]]
 # #############################################################################
 
 # Compute DBSCAN
-db = DBSCAN(eps=0.3, min_samples=6).fit(X)
+db = DBSCAN(eps=0.3, min_samples=5).fit(X)
 core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
 core_samples_mask[db.core_sample_indices_] = True
 labels = db.labels_
@@ -44,8 +44,8 @@ for k, col in zip(unique_labels, colors):
     plt.plot(Outliers[:, 0], Outliers[:, 1], 'o', markerfacecolor=tuple(col),
              markeredgecolor='k', markersize=6)
 
-plt.xlim([-5,4])
-plt.ylim([-5,5])
+plt.xlim([-6,5])
+plt.ylim([-6,4])
 plt.title('Estimated number of clusters: %d (eps=.3; min=6)' % n_clusters_)
 plt.savefig('Original DBSCAN plot.jpg')
 plt.show()
@@ -70,8 +70,8 @@ for k, col in zip(unique_labels, colors):
     plt.plot(Outliers[:, 0], Outliers[:, 1], 'o', markerfacecolor=tuple(col),
              markeredgecolor='k', markersize=2)
 
-plt.xlim([-5,4])
-plt.ylim([-5,5])
+plt.xlim([-6,5])
+plt.ylim([-6,4])
 plt.title('Estimated number of clusters: %d (eps=.3; min=6)' % n_clusters_)
 plt.savefig('Original DBSCAN plot (small pt size).jpg')
 plt.show()
